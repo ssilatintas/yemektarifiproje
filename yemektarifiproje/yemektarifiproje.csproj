@@ -196,6 +196,7 @@
     <Content Include="GununYemegi.aspx" />
     <Content Include="Hakkimizda.aspx" />
     <Content Include="Kullanici.css" />
+    <Content Include="resim\blog.jpg" />
     <Content Include="resim\indir.jpeg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
