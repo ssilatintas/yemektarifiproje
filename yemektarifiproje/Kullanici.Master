@@ -52,11 +52,13 @@
         <div style="margin-left:300px; width:700px; height:auto;"> 
 
            <div style="width:200px; float:left; height:auto; background-color:#ce7171; margin-left:0px ">&nbsp;<strong><span class="auto-style6">KATEGORİLER</span></strong><br />
-               <asp:DataList ID="DataList1" runat="server">
+               <asp:DataList ID="DataList1" runat="server" Height="265px" Width="201px">
                    <ItemTemplate>
                        <div style="border: thin solid #FFFFFF">
+                          <a href="KategoriDetay.aspx?Kategoriid=<%#Eval("Kategoriid")%>"> <strong>
                            <asp:Label ID="Label3" runat="server" CssClass="auto-style7" Text='<%# Eval("KateoriAd") %>'></asp:Label>
-                           (<asp:Label ID="Label4" runat="server" CssClass="auto-style7" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
+                           </strong>(<asp:Label ID="Label4" runat="server" CssClass="auto-style7" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
+                           </a>
                            )</div>
                    </ItemTemplate>
                </asp:DataList>
