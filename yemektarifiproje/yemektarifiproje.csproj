@@ -159,6 +159,13 @@
     <Compile Include="Hakkimizda.aspx.designer.cs">
       <DependentUpon>Hakkimizda.aspx</DependentUpon>
     </Compile>
+    <Compile Include="KategoriDüzenle.aspx.cs">
+      <DependentUpon>KategoriDüzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KategoriDüzenle.aspx.designer.cs">
+      <DependentUpon>KategoriDüzenle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="KategoriDetay.aspx.cs">
       <DependentUpon>KategoriDetay.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -224,6 +231,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="GununYemegi.aspx" />
     <Content Include="Hakkimizda.aspx" />
+    <Content Include="KategoriDüzenle.aspx" />
     <Content Include="KategoriDetay.aspx" />
     <Content Include="Kategoriler.aspx" />
     <Content Include="Kullanici.css" />

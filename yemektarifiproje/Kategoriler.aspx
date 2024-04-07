@@ -25,7 +25,7 @@
     }
         .auto-style12 {
             width: 99%;
-            height: 186px;
+            height: 211px;
         }
         .auto-style13 {
             height: 208px;
@@ -59,7 +59,8 @@
                                         <td class="auto-style8">&nbsp;
                                             <asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/resim/ikonlar/delete2.png" Width="30px" />
                                             &nbsp;</td>
-                                        <td class="auto-style8">&nbsp; &nbsp;<asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/resim/ikonlar/refresh.png" Width="30px" />
+                                        <td class="auto-style8">&nbsp; &nbsp; <a href="KategoriDüzenle.aspx?Kategoriid=<%#Eval("Kategoriid") %>">    <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/resim/ikonlar/refresh.png" Width="30px" /></a>
+
                                         </td>
                                     </tr>
                                 </table>
