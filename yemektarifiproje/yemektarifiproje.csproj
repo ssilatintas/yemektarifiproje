@@ -166,6 +166,13 @@
     <Compile Include="KategoriDetay.aspx.designer.cs">
       <DependentUpon>KategoriDetay.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Kategoriler.aspx.cs">
+      <DependentUpon>Kategoriler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kategoriler.aspx.designer.cs">
+      <DependentUpon>Kategoriler.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Kullanici.Master.cs">
       <DependentUpon>Kullanici.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -218,9 +225,13 @@
     <Content Include="GununYemegi.aspx" />
     <Content Include="Hakkimizda.aspx" />
     <Content Include="KategoriDetay.aspx" />
+    <Content Include="Kategoriler.aspx" />
     <Content Include="Kullanici.css" />
     <Content Include="resim\blog.jpg" />
     <Content Include="resim\header.jpg" />
+    <Content Include="resim\ikonlar\delete.png" />
+    <Content Include="resim\ikonlar\delete2.png" />
+    <Content Include="resim\ikonlar\refresh.png" />
     <Content Include="resim\indir.jpeg" />
     <Content Include="resim\login.png" />
     <Content Include="Scripts\bootstrap.js" />
@@ -231,6 +242,7 @@
     <Content Include="YemekDetay.aspx" />
     <Content Include="İletisim.aspx" />
     <Content Include="Admin.Master" />
+    <Content Include="resim\ikonlar\cop.webp" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
