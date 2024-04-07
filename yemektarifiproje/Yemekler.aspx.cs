@@ -64,6 +64,7 @@ namespace yemektarifiproje
 
         protected void BtnEkle_Click(object sender, EventArgs e)
         {
+            //yemek ekleme
             SqlCommand komut = new SqlCommand("insert into Tbl_Yemekler(yemekad,yemekmalzeme,yemektarif,kategoriid) values (@p1,@p2,@p3,@p4)", bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", TextBox1.Text);
             komut.Parameters.AddWithValue("@p2", TextBox2.Text);
@@ -71,7 +72,11 @@ namespace yemektarifiproje
             komut.Parameters.AddWithValue("@p4", DropDownList1.SelectedValue);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
-
+            // kategori sayısı arttırma
+            SqlCommand komut2 = new SqlCommand("update Tbl_Kategoriler set KategoriAdet=KategoriAdet+1 where Kategoriid=@p1", bgl.baglanti());
+            komut2.Parameters.AddWithValue("@p1", DropDownList1.SelectedValue);
+            komut2.ExecuteNonQuery();
+            bgl.baglanti().Close();
         }
     }
 }
