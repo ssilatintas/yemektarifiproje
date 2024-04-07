@@ -47,7 +47,7 @@
                         <td class="auto-style2" style="border: thin inset #FFFFFF"> <a href="Kategoriler.aspx"> KATEGORİLER</a> </td>
                     </tr>
                     <tr>
-                        <td class="auto-style3" style="border: thin inset #FFFFFF">YEMEKLER</td>
+                        <td class="auto-style3" style="border: thin inset #FFFFFF"><a href="Yemekler.aspx">   YEMEKLER</a> </td>
                     </tr>
                     <tr>
                         <td class="auto-style3" style="border: thin inset #FFFFFF">YORUMLAR</td>
