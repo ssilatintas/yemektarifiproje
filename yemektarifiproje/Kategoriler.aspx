@@ -24,8 +24,8 @@
         text-align: right;
     }
         .auto-style12 {
-            width: 96%;
-            height: 199px;
+            width: 99%;
+            height: 186px;
         }
         .auto-style13 {
             height: 208px;
@@ -71,7 +71,7 @@
             </tr>
         </table>
 </asp:Panel>
-    <asp:Panel ID="Panel3" runat="server" CssClass="auto-style5" style="margin-top:75px;" >
+    <asp:Panel ID="Panel3" runat="server" CssClass="auto-style5" style="margin-top:150px;" >
         <table class="auto-style1">
             <tr>
                 <td class="auto-style10"><strong>
@@ -99,13 +99,13 @@
             <tr>
                 <td>KATEGORİ İKON:</td>
                 <td>
-                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    <asp:FileUpload ID="FileUpload1" runat="server" />
                 </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
                 <td><strong>
-                    <asp:Button ID="Button5" runat="server" CssClass="auto-style11" Text="EKLE" Width="100px" />
+                    <asp:Button ID="BtnEkle" runat="server" CssClass="auto-style11" Text="EKLE" Width="100px" OnClick="BtnEkle_Click" />
                     </strong></td>
             </tr>
         </table>
