@@ -32,6 +32,23 @@
         .auto-style13 {
             height: 208px;
         }
+        .auto-style14 {
+            text-align: center;
+        }
+        .auto-style15 {
+            text-align: justify;
+        }
+        .auto-style18 {
+            width: 140px;
+        }
+        .auto-style19 {
+            text-align: justify;
+            width: 140px;
+        }
+        .auto-style20 {
+            text-align: left;
+            width: 140px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
@@ -90,25 +107,38 @@
     <asp:Panel ID="Panel4" runat="server">
         <table class="auto-style1">
             <tr>
-                <td>&nbsp;</td>
+                <td class="auto-style18">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>KATEGORİ AD:</td>
+                <td class="auto-style19">YEMEK AD:</td>
                 <td>
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Width="270px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td>KATEGORİ İKON:</td>
+                <td class="auto-style19">MALZEMELER:</td>
                 <td>
-                    <asp:FileUpload ID="FileUpload1" runat="server" />
+                    <asp:TextBox ID="TextBox2" runat="server" Height="100px" TextMode="MultiLine" Width="270px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
-                <td><strong>
-                    <asp:Button ID="BtnEkle" runat="server" CssClass="auto-style11" Text="EKLE" Width="100px"  />
+                <td class="auto-style20">YEMEK TARİFİ:</td>
+                <td>
+                    <asp:TextBox ID="TextBox3" runat="server" Height="200px" TextMode="MultiLine" Width="270px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style19">KATEGORİ:</td>
+                <td class="auto-style15">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Width="270px">
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style18">&nbsp;</td>
+                <td class="auto-style14"><strong>
+                    <asp:Button ID="BtnEkle" runat="server" CssClass="auto-style11" Text="EKLE" Width="100px" />
                     </strong></td>
             </tr>
         </table>
