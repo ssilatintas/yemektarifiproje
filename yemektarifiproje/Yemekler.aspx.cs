@@ -11,6 +11,8 @@ namespace yemektarifiproje
     public partial class Yemekler : System.Web.UI.Page
     {
         sqlsinif bgl = new sqlsinif();
+        string islem = "";
+        string id = "";
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -19,6 +21,8 @@ namespace yemektarifiproje
 
             if(Page.IsPostBack==false)
             {
+                id = Request.QueryString["Yemekid"];
+                islem = Request.QueryString["islem"];
                 //Kategori Listesi
                 SqlCommand komut2 = new SqlCommand("Select*From Tbl_Kategoriler", bgl.baglanti());
                 SqlDataReader dr2 = komut2.ExecuteReader();
@@ -36,8 +40,17 @@ namespace yemektarifiproje
             DataList1.DataBind();
 
 
-          
-            
+            if (islem == "sil")
+            {
+                int id = Convert.ToInt32(Request.QueryString["Yemekid"]);
+                SqlCommand komut2 = new SqlCommand("DELETE FROM Tbl_Yemekler WHERE Yemekid=@P1", bgl.baglanti());
+                komut2.Parameters.AddWithValue("@P1", (id > 0 ? id : 0));
+                komut2.ExecuteNonQuery();
+                bgl.baglanti().Close();
+            }
+
+
+
 
 
         }

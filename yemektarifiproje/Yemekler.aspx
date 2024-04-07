@@ -76,7 +76,7 @@
                                             <asp:Label ID="Label1" runat="server" CssClass="auto-style7" Text='<%# Eval("YemekAd") %>'></asp:Label>
                                         </td>
                                         <td class="auto-style8">&nbsp;
-                                            <a href="Kategoriler.aspx?Kategoriid=<%#Eval("Kategoriid") %>&islem=sil"><asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/resim/ikonlar/delete2.png" Width="30px" /></a>
+                                            <a href="Yemekler.aspx?Yemekid=<%#Eval("Yemekid") %>&islem=sil"><asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/resim/ikonlar/delete2.png" Width="30px" /></a>
                                             &nbsp;</td>
                                         <td class="auto-style8">&nbsp; &nbsp; <a href="YemekDüzenle.aspx?Yemekid=<%#Eval("Yemekid") %>">    <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/resim/ikonlar/refresh.png" Width="30px" /></a>
 
