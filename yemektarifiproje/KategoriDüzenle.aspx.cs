@@ -18,17 +18,33 @@ namespace yemektarifiproje
         {
 
             int id = Convert.ToInt32(Request.QueryString["Kategoriid"]);
-            SqlCommand cmd = new SqlCommand(" Select * From Tbl_Kategoriler where Kategoriid=@p1", bgl.baglanti());
-            cmd.Parameters.AddWithValue("@p1", (id > 0 ? id : 0));
-            SqlDataReader dr = cmd.ExecuteReader();
-            while (dr.Read())
+            if(Page.IsPostBack==false)
             {
-                TextBox1.Text = dr[1].ToString();
-                TextBox2.Text = dr[2].ToString();
+                SqlCommand cmd = new SqlCommand(" Select * From Tbl_Kategoriler where Kategoriid=@p1", bgl.baglanti());
+                cmd.Parameters.AddWithValue("@p1", (id > 0 ? id : 0));
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    TextBox1.Text = dr[1].ToString();
+                    TextBox2.Text = dr[2].ToString();
+                }
+                bgl.baglanti().Close();
             }
-            bgl.baglanti().Close();
+            
 
         }
-    
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(Request.QueryString["Kategoriid"]);
+            SqlCommand cmd = new SqlCommand("Update Tbl_Kategoriler set Kateoriad=@p1,KategoriAdet=@p2 where Kategoriid=@p3", bgl.baglanti());
+            cmd.Parameters.AddWithValue("@p1", TextBox1.Text);
+            cmd.Parameters.AddWithValue("@p2", TextBox2.Text);
+            cmd.Parameters.AddWithValue("@p3", (id > 0 ? id : 0));
+            cmd.ExecuteNonQuery();
+            bgl.baglanti().Close();
+
+
+        }
     }
 }
