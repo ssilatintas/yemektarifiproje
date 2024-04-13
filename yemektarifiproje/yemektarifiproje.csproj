@@ -224,6 +224,13 @@
     <Compile Include="Yemekler.aspx.designer.cs">
       <DependentUpon>Yemekler.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Yorumlar.aspx.cs">
+      <DependentUpon>Yorumlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yorumlar.aspx.designer.cs">
+      <DependentUpon>Yorumlar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="İletisim.aspx.cs">
       <DependentUpon>İletisim.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -264,6 +271,7 @@
     <Content Include="YemekDetay.aspx" />
     <Content Include="YemekDüzenle.aspx" />
     <Content Include="Yemekler.aspx" />
+    <Content Include="Yorumlar.aspx" />
     <Content Include="İletisim.aspx" />
     <Content Include="Admin.Master" />
     <Content Include="resim\ikonlar\cop.webp" />
