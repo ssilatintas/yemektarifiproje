@@ -40,5 +40,11 @@
                 <asp:TextBox ID="TextBox4" runat="server" Width="216px"></asp:TextBox>
             </td>
         </tr>
+        <tr>
+            <td class="auto-style6">&nbsp;</td>
+            <td class="auto-style5">
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="ONAYLA" Width="206px" />
+            </td>
+        </tr>
     </table>
 </asp:Content>
