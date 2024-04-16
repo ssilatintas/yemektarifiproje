@@ -16,32 +16,40 @@ namespace yemektarifiproje
         {
             id = Request.QueryString["Yorumid"];
 
-            if (Page.IsPostBack == false)
+            if (!IsPostBack)
             {
-                SqlCommand komut = new SqlCommand("Select YorumAdSoyad,YorumMail,Yorumicerik,YemekAd From Tbl_Yorumlar inner join Tbl_Yemekleron Tbl_Yorumlar.yemekid=Tbl_Yemekler.yemekid where Yorumid=@p1", bgl.baglanti());
-                komut.Parameters.AddWithValue("@p1", id);
-                SqlDataReader dr = komut.ExecuteReader();
-                while (dr.Read())
+                if (!string.IsNullOrEmpty(id))
                 {
-                    TextBox1.Text = dr[0].ToString();
-                    TextBox2.Text = dr[1].ToString();
-                    TextBox3.Text = dr[2].ToString();
-                    TextBox4.Text = dr[3].ToString();
+                    using (SqlCommand komut = new SqlCommand("SELECT YorumAdSoyad, YorumMail, Yorumicerik, YemekAd FROM Tbl_Yorumlar INNER JOIN Tbl_Yemekler ON Tbl_Yorumlar.yemekid = Tbl_Yemekler.yemekid WHERE yorumid = @p1", bgl.baglanti()))
+                    {
+                        komut.Parameters.AddWithValue("@p1", id);
+                        SqlDataReader dr = komut.ExecuteReader();
 
+                        if (dr.Read())
+                        {
+                            TextBox1.Text = dr[0].ToString();
+                            TextBox2.Text = dr[1].ToString();
+                            TextBox3.Text = dr[2].ToString();
+                            TextBox4.Text = dr[3].ToString();
+                        }
+
+                        dr.Close();
+                    }
+
+                    bgl.baglanti().Close();
                 }
-                bgl.baglanti().Close();
             }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("Update Tbl_Yorumlar set yorumicerik=@p1,YorumOnay=@p2 where yorumid=@p3", bgl.baglanti());
+            SqlCommand komut = new SqlCommand("Update Tbl_Yorumlar set yorumicerik=@p1,yorumonay=@p2 where yorumid=@p3", bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", TextBox3.Text);
             komut.Parameters.AddWithValue("@p2", "True");
             komut.Parameters.AddWithValue("@p3", id);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
-
         }
     }
 }
+

@@ -53,7 +53,7 @@
                         <td class="auto-style3" style="border: thin inset #FFFFFF"> <a href="Yorumlar.aspx" > YORUMLAR </a> </td>
                     </tr>
                     <tr>
-                        <td class="auto-style2" style="border: thin inset #FFFFFF">MESAJLAR</td>
+                        <td class="auto-style2" style="border: thin inset #FFFFFF">  <a href="Mesajlar.aspx"> MESAJLAR </a> </td>
                     </tr>
                     <tr>
                         <td class="auto-style2" style="border: thin inset #FFFFFF">GÜNÜN YEMEĞİ</td>

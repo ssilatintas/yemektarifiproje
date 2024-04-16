@@ -24,13 +24,7 @@
         width: 259px;
         height: 194px;
     }
-    .auto-style15 {
-        width: 184px;
-    }
-    .auto-style16 {
-        text-align: right;
-    }
-</style>
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <asp:DataList ID="DataList2" runat="server">
@@ -38,18 +32,18 @@
         <table class="auto-style8">
             <tr>
                 <td style="border: thin solid #FFFFFF" class="auto-style12">
-                    <asp:Label ID="Label5" runat="server" CssClass="auto-style9" Text='<%# Eval("GununYemegiAd") %>'></asp:Label>
+                    <asp:Label ID="Label5" runat="server" CssClass="auto-style9" Text='<%# Eval("YemekAd") %>'></asp:Label>
                 </td>
             </tr>
             <tr>
-                <td style="border: thin solid #FFFFFF"><span class="auto-style13"><strong>Malzemeler</strong></span>:<asp:Label ID="Label6" runat="server" Text='<%# Eval("GununYemegiMalzeme") %>'></asp:Label>
+                <td style="border: thin solid #FFFFFF"><span class="auto-style13"><strong>Malzemeler</strong></span>:<asp:Label ID="Label6" runat="server" Text='<%# Eval("YemekMalzeme") %>'></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td style="border: thin solid #FFFFFF">&nbsp;</td>
             </tr>
             <tr>
-                <td style="border: thin solid #FFFFFF"><span class="auto-style13"><strong>Tarif</strong></span>:<asp:Label ID="Label7" runat="server" Text='<%# Eval("GununYemegiTarif") %>'></asp:Label>
+                <td style="border: thin solid #FFFFFF"><span class="auto-style13"><strong>Tarif</strong></span>:<asp:Label ID="Label7" runat="server" Text='<%# Eval("YemekTarif") %>'></asp:Label>
                 </td>
             </tr>
             <tr>
@@ -61,11 +55,11 @@
                 <td class="auto-style10" style="border: thin solid #FFFFFF">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style10" style="border: thin solid #FFFFFF"><span class="auto-style13"><strong>Puan</strong></span>:<asp:Label ID="Label8" runat="server" Text='<%# Eval("GununYemegiPuan") %>'></asp:Label>
+                <td class="auto-style10" style="border: thin solid #FFFFFF"><span class="auto-style13"><strong>Puan</strong></span>:<asp:Label ID="Label8" runat="server" Text='<%# Eval("YemekPuan") %>'></asp:Label>
                     &nbsp; </td>
             </tr>
             <tr>
-                <td class="auto-style10" style="border: thin solid #FFFFFF"><span class="auto-style13"><strong>Eklenme Tarihi</strong></span>:<asp:Label ID="Label10" runat="server" Text='<%# Eval("GununYemegiTarih") %>'></asp:Label>
+                <td class="auto-style10" style="border: thin solid #FFFFFF"><span class="auto-style13"><strong>Eklenme Tarihi</strong></span>:<asp:Label ID="Label10" runat="server" Text='<%# Eval("YemekTarih") %>'></asp:Label>
                 </td>
             </tr>
         </table>
