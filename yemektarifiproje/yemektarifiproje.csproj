@@ -281,6 +281,8 @@
     <Content Include="Mesajlar.aspx" />
     <Content Include="resim\blog.jpg" />
     <Content Include="resim\header.jpg" />
+    <Content Include="resim\ikonlar\choose.png.png" />
+    <Content Include="resim\ikonlar\choose2.png" />
     <Content Include="resim\ikonlar\delete.png" />
     <Content Include="resim\ikonlar\delete2.png" />
     <Content Include="resim\ikonlar\read.png.jpg" />
