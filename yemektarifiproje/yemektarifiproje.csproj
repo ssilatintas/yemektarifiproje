@@ -194,6 +194,13 @@
     <Compile Include="Kullanici.Master.designer.cs">
       <DependentUpon>Kullanici.Master</DependentUpon>
     </Compile>
+    <Compile Include="MesajDetay.aspx.cs">
+      <DependentUpon>MesajDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MesajDetay.aspx.designer.cs">
+      <DependentUpon>MesajDetay.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Mesajlar.aspx.cs">
       <DependentUpon>Mesajlar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -278,6 +285,7 @@
     <Content Include="KategoriDetay.aspx" />
     <Content Include="Kategoriler.aspx" />
     <Content Include="Kullanici.css" />
+    <Content Include="MesajDetay.aspx" />
     <Content Include="Mesajlar.aspx" />
     <Content Include="resim\blog.jpg" />
     <Content Include="resim\header.jpg" />

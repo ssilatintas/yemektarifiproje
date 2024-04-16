@@ -23,9 +23,15 @@
         margin-top: 0px;
     }
     .auto-style20 {
-        width: 198px;
+        width: 329px;
         text-align: right;
     }
+        .auto-style21 {
+            width: 371px;
+        }
+        .auto-style22 {
+            width: 257px;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
@@ -38,7 +44,7 @@
                 <td class="auto-style14"><strong>
                     <asp:Button ID="Button2" runat="server" CssClass="auto-style12" Height="30px" Text="-" Width="30px" OnClick="Button2_Click"  />
                     </strong></td>
-                <td>MESAJ LİSTESİ</td>
+                <td class="auto-style21">MESAJ LİSTESİ</td>
             </tr>
         </table>
     </asp:Panel>
@@ -47,12 +53,12 @@
             <ItemTemplate>
                 <table class="auto-style5">
                     <tr>
-                        <td>
+                        <td class="auto-style22">
                             <strong>
                             <asp:Label ID="Label1" runat="server" CssClass="auto-style17" Text='<%# Eval("MesajGonderen") %>'></asp:Label>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></td>
+                           </strong></td>
                         <td class="auto-style20">
-                            &nbsp;<asp:Image ID="Image2" runat="server" Height="38px" ImageUrl="~/resim/ikonlar/read.png.jpg" Width="28px" />&nbsp; </a>
+                             <a href="MesajDetay.aspx?Mesajid=<%#Eval("Mesajid") %>"> <asp:Image ID="Image2" runat="server" Height="38px" ImageUrl="~/resim/ikonlar/read.png.jpg" Width="28px" /> </a>
                         </td>
                     </tr>
                 </table>
